@@ -1,0 +1,5 @@
+#!bin/bash
+#Yum
+
+sudo apt-get install python-xlib
+import pyautogui
