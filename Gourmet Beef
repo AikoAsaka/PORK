@@ -1,5 +1,13 @@
-#!bin/bash
+#!/bin/bash
 #Yum
 
-sudo apt-get install python-xlib
+sudo apt-get install python3-dev
 import pyautogui
+  pyautogui.FAILSAFE = True
+ 
+ #Updates
+ pyautogui.moveTo(25, 61)
+ pyautogui.click()
+ pyautogui.typewrite('software updater\n', interval=secs_between_keys)
+ pyautogui.moveTo(159, 160)
+ pyautogui.click()
