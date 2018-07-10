@@ -1,5 +1,15 @@
 #!/usr/bin/python
 #Yum
+#RUN GOURMET BEEF PREP BEFORE THIS
+#Installs
+#pip3 install python3-xlib
+#pip install python3-xlib
+#sudo apt-get install scrot
+#sudo apt-get install python3-tk
+#sudo apt-get install python3-dev
+#pip3 install pyautogui
+#pip install pyautogui
+#pip install Pillow
 
 import pyautogui
 pyautogui.PAUSE = 1
@@ -7,5 +17,5 @@ pyautogui.FAILSAFE = True #When fail-safe mode is True, moving the mouse to the 
 #a pyautogui.FailSafeException that can abort your program.
 
 #Magic
-pyautogui.click(pyautogui.locateOnScreen((pyautogui.center('home_butt.png')))
-pyautogui.click(pyautogui.locateOnScreen((pyautogui.center('home_search.png')))
+pyautogui.click(pyautogui.locateOnScreen(pyautogui.center('home_butt.png')))
+pyautogui.click(pyautogui.locateOnScreen(pyautogui.center('home_search.png')))
