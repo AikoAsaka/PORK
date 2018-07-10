@@ -1,18 +1,18 @@
 #!/bin/bash
 #Yum
 
-sudo apt-get install python3-dev
-sudo apt-get install python3-pip
-sudo pip3 install python3-xlib
+#Installs
+sudo apt-get install pip3
+pip3 install python3-xlib
 sudo apt-get install scrot
 sudo apt-get install python3-tk
-sudo apt-get install python3-xlib
+sudo apt-get install python3-dev
 pip3 install pyautogui
-  pyautogui.FAILSAFE = True
- 
- #Updates
- pyautogui.moveTo(25, 61)
- pyautogui.click()
- pyautogui.typewrite('software updater\n', interval=secs_between_keys)
- pyautogui.moveTo(159, 160)
- pyautogui.click()
+
+import pyautogui
+pyautogui.PAUSE = 2.5
+pyautogui.FAILSAFE = True #When fail-safe mode is True, moving the mouse to the upper-left will raise 
+#a pyautogui.FailSafeException that can abort your program.
+
+#Magic
+pyautogui.click(pyautogui.locateCenterOnScreen('home_butt.png'))
